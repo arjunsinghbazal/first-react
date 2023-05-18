@@ -1,17 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM  from 'react-dom';
+import "./styles.css"
+import Card from "./card";
+import arr from "./arr"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function call(val){
+    return (
+        <Card
+        key={val.id}
+        imgSrc={val.imgSrc}
+        title={val.title}
+        sname={val.sname}
+        link={val.link}
+     />
+    )
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+   <>
+   <h1 className='Heading'>Top Five Netflix Series In 2022</h1>
+   <div className="cardS">
+     {arr.map(call)}
+   </div>
+   </>
+    ,
+    document.getElementById('root')
+)
