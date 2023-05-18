@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/arjunsinghbazal/first-react/static/css/main.89f9f48f.css",
+    "main.js": "/arjunsinghbazal/first-react/static/js/main.cc483c2a.js",
+    "index.html": "/arjunsinghbazal/first-react/index.html",
+    "main.89f9f48f.css.map": "/arjunsinghbazal/first-react/static/css/main.89f9f48f.css.map",
+    "main.cc483c2a.js.map": "/arjunsinghbazal/first-react/static/js/main.cc483c2a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89f9f48f.css",
+    "static/js/main.cc483c2a.js"
+  ]
+}
